@@ -1,22 +1,36 @@
+
+
+table,tr,td{
+  border:2px solid #000;
+  border-collapse: collapse;
+  background-color: yellow;
+}
+
+
 .main{
-  width:100%;
-  background-color: #999;
+
+  background-color: blue;
   display: flex;
-  flex-direction: row;
+  flex-wrap:wrap;
 }
 .left{
-    width:25%;
-    background-color: #c45e45;
+    text-align: justify;
+    background-color: #708090;
     border:5px solid #000;
     margin:5px;
-    padding:6px;
+    flex:1;
+
+
     /* background-image: url(); */
 }
 .right{
-  width:70%;
-background-color: #666;
+  text-align: justify;
+
+background-color: #008B8B;
 border:5px solid #000;
-margin: 5px;
+color:#000;
+flex:2;
+
 }
 #name{
   color:green;
@@ -33,32 +47,67 @@ margin: 5px;
 480: mobile landscape(or) smaller device
 */
 /* @media sreen and (min-width:425px){ */
-@media only screen and (min-width:1024px) and (max-width:1280px){
+ @media only screen and (min-width:1024px) and (max-width:1280px){
 .main{
   display: flex;
-  flex-direction: row;
-  width:100%;
+  flex-wrap:wrap;
+  background-color: #800080;
 }
 .left{
-  width:25%;
+  text-align: justify;
+
   background-color: #985;
 }
 .right{
-  width:75%;
+  text-align: justify;
+
   background-color: #999;
 
 }
 }
 @media only screen and (min-width:768px) and (max-width:1024px){
+  .main{
+    display: flex;
+    flex-wrap:wrap;
+  background-color: #800080;
+  }
+  .left{
+    text-align: justify;
+
+    background-color: #EE82EE;
+  }
+  .right{
+    text-align: justify;
+
+    background-color: #FA8072;
+
+  }
 
 }
 @media only screen (min-width:480px) and (max-width:768px){
+  .main{
+    display: flex;
+    flex-wrap:wrap;
+  background-color: #800080;
+  }
+  .left{
+    text-align: justify;
+
+    background-color: #00FF00;
+  }
+  .right{
+    text-align: justify;
+
+    background-color: #20B2AA;
+
+  }
+
 
 }
 @media only screen (min-width:1024){
 
 }
-/* .main{
+ /* .main{
     width:100%;
     background-color:#999;
     display:flex;
@@ -85,4 +134,4 @@ margin: 5px;
   .left img{
     border-radius: 50px;
     border: 5px solid:#c454;
-  }*/
+  } */
